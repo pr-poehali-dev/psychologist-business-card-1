@@ -203,14 +203,32 @@ const Index = () => {
 
       <section id="about" className="py-20 px-4 bg-secondary/30">
         <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="text-4xl font-bold">Обо мне</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Я — практикующий психолог с более чем 10-летним опытом работы. Имею высшее психологическое образование, 
-              регулярно повышаю квалификацию и прохожу личную терапию. Моя специализация — работа с тревожными 
-              расстройствами, депрессией, кризисными состояниями и улучшением качества межличностных отношений.
-            </p>
-            <div className="grid md:grid-cols-3 gap-6 mt-12">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl font-bold text-center mb-12">Обо мне</h2>
+            <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+              <div className="animate-scale-in">
+                <img 
+                  src="https://cdn.poehali.dev/files/5eaca33d-bb22-4a37-8940-c246c3a63597.jpg" 
+                  alt="Психолог" 
+                  className="rounded-2xl shadow-xl w-full object-cover max-w-md mx-auto"
+                />
+              </div>
+              <div className="space-y-6">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Я — практикующий психолог с более чем 10-летним опытом работы. Имею высшее психологическое образование, 
+                  регулярно повышаю квалификацию и прохожу личную терапию.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Моя специализация — работа с тревожными расстройствами, депрессией, кризисными состояниями 
+                  и улучшением качества межличностных отношений.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Я создаю безопасное пространство, где каждый может открыто говорить о своих переживаниях 
+                  и найти поддержку на пути к внутренней гармонии.
+                </p>
+              </div>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
               <Card className="text-center hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Icon name="GraduationCap" className="mx-auto mb-2 text-primary" size={40} />
